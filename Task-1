@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string s,c,b;
+    cout<<"Enter your name:-";
+    cin>>s;
+    cout<<endl;
+    cout<<"Enter your age:-";
+    cin>>c;
+    cout<<endl;
+    cout<<"Are you ready to star the quiz(yes/no):-";
+    cin>>b;
+    cout<<endl;
+    if(b=="yes"){cout<<"All the best!\n\n";}
+    else{cout<<"ok then,good bye!\n\n";}
+    int y,a,z,x,n,count=0;
+    cout<<"This quiz is based on general knowlwdge\n\n";
+     cout<<"Question 1.What is the ph value of human body\n1.9.2 to 9.8\t2.7.0 to 7.8\t3.6.1 to 6.3\nanswer:-";
+     cin>>n;
+     cout<<endl;
+          if(n==3){cout<<"correct answer\n\n";
+             count=count+1;}
+             else{cout<<"incorrect answer\n\n";}
+
+    cout<<"question 2.Forming association in india is\n1.Fundamental right\t2.legal right\t3.illegal right\nanswer:-";
+    cin>>x;
+    cout<<endl;
+          if(x==1){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+
+    cout<<"Question 3.whisch animal is known as 'ship of desert'\n1.tiger\t2.Lion\t3.Camel\nanswer:- ";
+    cin>>z;
+    cout<<endl;
+          if(z==3){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+
+    cout<<"Question 4.In whichyear did titanic sink\n1.1890\t2.1912\t3.1950\nanswer:-";
+    cin>>y;
+    cout<<endl;
+          if(y==2){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+
+    cout<<"Question 5.which is the largest planet in our solar system\n1.Jupiter\t2.mars\t3.Earth\nanswer:-";
+    cin>>a;
+    cout<<endl;
+          if(a==1){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+
+    cout<<"your score is:-"<<count<<"/5";
+    
+}

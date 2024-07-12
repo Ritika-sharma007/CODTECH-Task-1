@@ -1,55 +1,91 @@
 #include<iostream>
 using namespace std;
 int main(){
-    string s,c,b;
+    string name,age,approval;
     cout<<"Enter your name:-";
-    cin>>s;
+    cin>>name;
     cout<<endl;
     cout<<"Enter your age:-";
-    cin>>c;
+    cin>>age;
     cout<<endl;
-    cout<<"Are you ready to star the quiz(yes/no):-";
-    cin>>b;
+    cout<<"Are you ready to start the quiz(yes/no):-";
+    cin>>approval;
     cout<<endl;
-    if(b=="yes"){cout<<"All the best!\n\n";}
+    if(approval=="yes"){cout<<"All the best!\n\n";}
     else{cout<<"ok then,good bye!\n\n";}
-    int y,a,z,x,n,count=0;
+    int ans_1,ans_2,ans_3,ans_4,ans_5,ans_6,ans_7,ans_8,ans_9,ans_10,count=0;
     cout<<"This quiz is based on general knowlwdge\n\n";
-     cout<<"Question 1.What is the ph value of human body\n1.9.2 to 9.8\t2.7.0 to 7.8\t3.6.1 to 6.3\nanswer:-";
-     cin>>n;
+     cout<<"Question 1.What is the ph value of human body\n\n1.9.2 to 9.8\n2.7.0 to 7.8\n3.6.1 to 6.3\n\nanswer:-";
+     cin>>ans_1;
      cout<<endl;
-          if(n==3){cout<<"correct answer\n\n";
+          if(ans_1==3){cout<<"correct answer\n\n";
              count=count+1;}
              else{cout<<"incorrect answer\n\n";}
 
-    cout<<"question 2.Forming association in india is\n1.Fundamental right\t2.legal right\t3.illegal right\nanswer:-";
-    cin>>x;
+    cout<<"question 2.Forming association in india is\n\n1.Fundamental right\n2.legal right\n3.illegal right\n\nanswer:-";
+    cin>>ans_2;
     cout<<endl;
-          if(x==1){cout<<"correct answer\n\n";
+          if(ans_2==1){cout<<"correct answer\n\n";
               count=count+1;}
                else{cout<<"incorrect answer\n\n";}
 
-    cout<<"Question 3.whisch animal is known as 'ship of desert'\n1.tiger\t2.Lion\t3.Camel\nanswer:- ";
-    cin>>z;
+    cout<<"Question 3.which is the largest gland in the body\n\n1.liver\n2.pancreas\n3.gall bladder\n\nanswer:- ";
+    cin>>ans_3;
     cout<<endl;
-          if(z==3){cout<<"correct answer\n\n";
+          if(ans_3==1){cout<<"correct answer\n\n";
               count=count+1;}
                else{cout<<"incorrect answer\n\n";}
 
-    cout<<"Question 4.In whichyear did titanic sink\n1.1890\t2.1912\t3.1950\nanswer:-";
-    cin>>y;
+    cout<<"Question 4.In which year did titanic sink\n\n1.1890\n2.1912\n3.1950\n\nanswer:-";
+    cin>>ans_4;
     cout<<endl;
-          if(y==2){cout<<"correct answer\n\n";
+          if(ans_4==2){cout<<"correct answer\n\n";
               count=count+1;}
                else{cout<<"incorrect answer\n\n";}
 
-    cout<<"Question 5.which is the largest planet in our solar system\n1.Jupiter\t2.mars\t3.Earth\nanswer:-";
-    cin>>a;
+    cout<<"Question 5.which is the largest planet in our solar system\n\n1.Jupiter\n2.mars\n3.Earth\n\nanswer:-";
+    cin>>ans_5;
     cout<<endl;
-          if(a==1){cout<<"correct answer\n\n";
+          if(ans_5==1){cout<<"correct answer\n\n";
               count=count+1;}
                else{cout<<"incorrect answer\n\n";}
 
-    cout<<"your score is:-"<<count<<"/5";
+    cout<<"Question 6.whcich food component is digested by bile juice in our alimentary canal\n\n1.carbohydrate\n2.protien\n3.fats\n\nanswer:-";
+    cin>>ans_6;
+    cout<<endl;
+     if(ans_6==3){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+     cout<<"Question 7.How many essential amino acids are present in our body\n\n1.15\n2.20\n3.10\n\nanswer:-";
+    cin>>ans_7;
+    cout<<endl;
+          if(ans_7==2){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+     cout<<"Question 8.which cell organelle is known as 'power house of cell'\n\n1.plastid\n2.golgi bodies\n3.mitochondria\n\nanswer:-";
+    cin>>ans_8;
+    cout<<endl;
+          if(ans_8==3){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+     cout<<"Question 9.Which is the nearest star to the planet Earth\n\n1.serius\n2.moon\n3.sun\n\nanswer:-";
+    cin>>ans_9;
+    cout<<endl;
+          if(ans_9==3){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
+     cout<<"Question 10.In which organ in our alimentary canal complete digestion takes place\n\n1.liver\n2.small intestine\n3.kidney\n\nanswer:-";
+    cin>>ans_10;
+    cout<<endl;
+          if(ans_10==2){cout<<"correct answer\n\n";
+              count=count+1;}
+               else{cout<<"incorrect answer\n\n";}
     
+    cout<<"your score is:-"<<count<<"/10"<<endl<<endl;
+    if(count<=4){cout<<"well tried! "<<name<<" better luck next time";}
+    if(count>=5&&count<=7){cout<<"good! "<<name<<" you can do better";}
+    if(count==8||count==9){cout<<"very good! "<<name<<" you were close to achieve 10/10";}
+    if(count==10){cout<<"congratulations! "<<name<<" all questions are correct";}
+    cout<<"\n\nThanks for participating";
+     return 0;
 }
